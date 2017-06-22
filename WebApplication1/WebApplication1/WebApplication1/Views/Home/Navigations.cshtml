@@ -1,0 +1,195 @@
+﻿@{
+    ViewBag.Title = "Navigation Bar";
+    ViewBag.Message = "Navigation Bar is a List of Links";
+}
+<h2>@ViewBag.Title.</h2>
+<h4>@ViewBag.Message</h4>
+<div class="navigations">
+    <div class="row">
+        <div class="col-sm-8">
+            <h3>How to Create Navigation</h3>
+            <div class="details">
+                <p>A navigation bar needs standard HTML as a base. A navigation bar is basically a list of links, so using the &lt;ul&gt; and &lt;li&gt; elements makes perfect sense:</p>
+                <h4>Example</h4>
+                <div>
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>ul<span style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp;
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="default.asp"</span></span><span style="color:mediumblue">&gt;</span></span>Home<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp;
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="news.asp"</span></span><span style="color:mediumblue">&gt;</span></span>News<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp;
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="contact.asp"</span></span><span style="color:mediumblue">&gt;</span></span>Contact<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp;
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="about.asp"</span></span><span style="color:mediumblue">&gt;</span></span>About<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>
+                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>/ul<span style="color:mediumblue">&gt;</span></span>
+                </div>
+                <div>
+                    <h4>Menu looks like </h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <p>Now let's remove the bullets and the margins and padding from the list:</p>
+
+                <h4>Example</h4>
+                <div>
+                    <span style="color:brown">
+                        ul
+                        <span style="color:black">{</span><span style="color:red">
+                            <br>
+                            &nbsp;&nbsp;&nbsp;
+                            list-style-type<span style="color:mediumblue"><span style="color:black">:</span> none<span style="color:black">;</span></span><br>
+                            &nbsp;&nbsp;&nbsp;
+                            margin<span style="color:mediumblue"><span style="color:black">:</span> 0<span style="color:black">;</span></span><br>
+                            &nbsp;&nbsp;&nbsp;
+                            padding<span style="color:mediumblue"><span style="color:black">:</span> 0<span style="color:black">;</span></span><br>
+                        </span><span style="color:black">}</span>
+                    </span>
+                 </div>
+                <div class="two">
+                    <h4>Menu looks like </h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <p>Example explained:</p>
+                <ul>
+                    <li>
+                        <code class="codespan">list-style-type: none;</code> - Removes the bullets. A navigation bar
+                        does not need list markers
+                    </li>
+                    <li>
+                        Set <code class="codespan">margin: 0;</code> and <code class="w3-codespan">padding: 0;</code>
+                        to remove browser default settings
+                    </li>
+                </ul>
+                <br /><br />
+                <h3>Vertical Navigation Bar</h3>
+                <p>
+                    To build a vertical navigation bar, you can style the &lt;a&gt; elements
+                    inside the list, in addition to the code above:
+                </p>
+                    <h3>Example</h3>
+                    <div>
+                        <span style="color:brown">
+                            ul <span style="color:black">{</span><span style="color:red">
+                                <br>&nbsp;&nbsp;&nbsp; list-style-type<span style="color:mediumblue"><span style="color:black">:</span> none<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp;
+                                margin<span style="color:mediumblue"><span style="color:black">:</span> 0<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; padding<span style="color:mediumblue"><span style="color:black">:</span> 0<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; width<span style="color:mediumblue">
+                                    <span style="color:black">:</span>
+                                    200px<span style="color:black">;</span>
+                                </span><br>&nbsp;&nbsp;&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span> #f1f1f1<span style="color:black">;</span></span><br>
+                            </span><span style="color:black">}</span><br><br>li a <span style="color:black">{</span><span style="color:red">
+                                <br>&nbsp;&nbsp;&nbsp; display<span style="color:mediumblue">
+                                    <span style="color:black">:</span>
+                                    block<span style="color:black">;</span>
+                                </span><br>&nbsp;&nbsp;&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> #000<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; padding<span style="color:mediumblue"><span style="color:black">:</span> 8px 16px<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; text-decoration<span style="color:mediumblue"><span style="color:black">:</span> none<span style="color:black">;</span></span><br>
+                            </span><span style="color:black">}</span><br><br><span style="color:green">
+                                /*
+                                Change the link color on hover */
+                            </span><br>li a:hover <span style="color:black">{</span><span style="color:red">
+                                <br>&nbsp;&nbsp;&nbsp;
+                                background-color<span style="color:mediumblue"><span style="color:black">:</span> #555<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> white<span style="color:black">;</span></span><br>
+                            </span><span style="color:black">}</span>
+                        </span>
+                    </div>
+                <div class="three">
+                    <h4>Menu looks like </h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <br /><br />
+                <h3>Horizontal Navigation Bar</h3>
+                <p>
+                    There are two ways to create a horizontal navigation bar. Using inline or floating list items.
+                </p>
+                <h3>Inline List Items</h3>
+                <p>
+                    One way to build a horizontal navigation bar is to specify the &lt;li&gt; elements
+                    as inline, in addition to the "standard" code above:
+                </p>
+                <h3>Example</h3>
+                <div>
+                        <span style="color:brown">
+                            li
+                            <span style="color:black">{</span><span style="color:red">
+                                <br>
+                                &nbsp;&nbsp;&nbsp;
+                                display<span style="color:mediumblue"><span style="color:black">:</span> inline<span style="color:black">;</span></span><br>
+                            </span><span style="color:black">}</span>
+                        </span>
+                </div>
+                <div class="four">
+                    <h4>Menu looks like </h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <h3>Floating List Items</h3>
+                <p>
+                    Another way of creating a horizontal navigation bar is to float the <li> elements, and specify a layout for the navigation links:
+                </p>
+                <h3>Example</h3>
+                <div>
+                    <span style="color:brown">
+                        li
+                        <span style="color:black">{</span><span style="color:red">
+                            <br>
+                            &nbsp;&nbsp;&nbsp;
+                            float<span style="color:mediumblue"><span style="color:black">:</span> left<span style="color:black">;</span></span><br>
+                        </span><span style="color:black">}</span><br><br>
+                        a
+                        <span style="color:black">{</span><span style="color:red">
+                            <br>
+                            &nbsp;&nbsp;&nbsp;
+                            display<span style="color:mediumblue"><span style="color:black">:</span> block<span style="color:black">;</span></span><br>
+                            &nbsp;&nbsp;&nbsp; padding<span style="color:mediumblue"><span style="color:black">:</span> 8px<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; background-color<span style="color:mediumblue">
+                                <span style="color:black">:</span>
+                                #dddddd<span style="color:black">;</span>
+                            </span><br>
+                        </span><span style="color:black">}</span>
+                    </span>
+                </div>
+
+                <div class="five">
+                    <h4>Menu looks like </h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+           </div>
+        </div>
+        <div class="col-sm-4">
+            <h3>Videos</h3>
+            <iframe src="http://www.youtube.com/embed/rDiiIhVuODQ" width="100%" height="200" frameborder="0" allowfullscreen></iframe>
+            <iframe src="http://www.youtube.com/embed/gQgqJG8ld7M" width="100%" height="200" frameborder="0" allowfullscreen></iframe>
+            <iframe src="http://www.youtube.com/embed/_ovlvYH782c" width="100%" height="200" frameborder="0" allowfullscreen></iframe>
+            <iframe src="http://www.youtube.com/embed/EoiXFvBlCo4" width="100%" height="200" frameborder="0" allowfullscreen></iframe>
+            <iframe src="http://www.youtube.com/embed/nL2bjYMjOgE" width="100%" height="200" frameborder="0" allowfullscreen></iframe>
+            <iframe src="http://www.youtube.com/embed/K4IbNhToxE0" width="100%" height="200" frameborder="0" allowfullscreen></iframe>
+            <iframe src="http://www.youtube.com/embed/KSc30pouJfI" width="100%" height="200" frameborder="0" allowfullscreen></iframe>
+            <iframe src="http://www.youtube.com/embed/TmQm-p3wCSU" width="100%" height="200" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>

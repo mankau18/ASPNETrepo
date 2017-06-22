@@ -1,0 +1,74 @@
+﻿@{
+    ViewBag.Title = "Javascript Question";
+    ViewBag.Message = "";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<p><strong>1. What is JavaScript?</strong></p>
+<p>JavaScript is a client-side as well as server side scripting language that can be inserted into HTML pages and is understood by web browsers. JavaScript is also an Object Oriented Programming language</p>
+<p><strong>2. Enumerate the differences between Java and JavaScript?</strong></p>
+<p>Java is a complete programming language. In contrast, JavaScript is a coded program that can be introduced to HTML pages. These two languages are not at all inter-dependent and are designed for the different intent.  Java is an object &#8211; oriented programming (OOPS) or structured programming language like C++ or C whereas JavaScript is a client-side scripting language and it is said to be unstructured programming.</p>
+<p><strong>3. What are JavaScript types?</strong></p>
+<p>Following are the JavaScript types:</p>
+<ul>
+    <li>Number</li>
+    <li>String</li>
+    <li>Boolean</li>
+    <li>Function</li>
+    <li>Object</li>
+    <li>Null</li>
+    <li>Undefined</li>
+</ul>
+<p><strong>4. What is the use of isNaN function?</strong></p>
+<p>isNan function returns true if the argument is not a number otherwise it is false.</p>
+<p><strong>5. Between JavaScript and an ASP script, which is faster?</strong></p>
+<p>JavaScript is faster. JavaScript is a client-side language and thus it does not need the assistance of the web server to execute. On the other hand, ASP is a server-side language and hence is always slower than JavaScript.  Javascript now is also a server side language (nodejs).</p>
+<p><strong>6. What is negative infinity?</strong></p>
+<p>Negative Infinity is a number in JavaScript which can be derived by dividing negative number by zero.</p>
+<p><strong>7. Is it possible to break JavaScript Code into several lines?</strong></p>
+<p>Breaking within a string statement can be done by the use of a backslash, ‘\’, at the end of the first line
+    <br />
+<strong>Example:</strong>
+
+<pre class="prettyprint notranslate tryit">
+document.write("This is \a program");
+</pre>
+
+And if you change to a new line when not within a string statement, then javaScript ignores break in line.
+<br />
+<strong>Example:</strong>
+    <pre class="prettyprint notranslate tryit">
+var x=1, y=2,
+
+z=
+
+x+y;
+</pre>
+The above code is perfectly fine, though not advisable as it hampers debugging.</p>
+<p><strong>8. Which company developed JavaScript?</strong></p>
+<p>Netscape is the software company who developed JavaScript.</p>
+<p><strong>9. What are undeclared and undefined variables?</strong></p>
+<p>Undeclared variables are those that do not exist in a program and are not declared. If the program tries to read the value of an undeclared variable, then a runtime error is encountered.</p>
+<p>Undefined variables are those that are declared in the program but have not been given any value. If the program tries to read the value of an undefined variable, an undefined value is returned.</p>
+<p><strong>10. What are global variables?</strong><strong> How are these variable declared and what are the problems associated with using them?</strong></p>
+<p>Global variables are those that are available throughout the length of the code, that is, these have no scope. The var keyword is used to declare a local variable or object. If the var keyword is omitted, a global variable is declared.</p>
+<p>Example:</p>
+<p>// Declare a global globalVariable = &#8220;Test&#8221;;</p>
+<p>The problems that are faced by using global variables are the clash of variable names of local and global scope. Also, it is difficult to debug and test the code that relies on global variables.</p>
+<p><strong>11. What is a prompt box?</strong></p>
+<p>A prompt box is a box which allows the user to enter input by providing a text box.  Label and box will be provided to enter the text or number.</p>
+<p><strong>12. What is ‘this’ keyword in JavaScript?</strong></p>
+<p>‘This’ keyword refers to the object from where it was called.</p>
+<p><strong>13. Explain the working of timers in JavaScript? Also elucidate the drawbacks of using the timer, if any?</strong></p>
+<p>Timers are used to execute a piece of code at a set time or also to repeat the code in a given interval of time. This is done by using the functions <strong>setTimeout, setInterval </strong>and<strong> clearInterval</strong>.</p>
+<p>The <strong>setTimeout(function, delay)</strong> function is used to start a timer that calls a particular function after the mentioned delay. The <strong>setInterval(function, delay)</strong> function is used to repeatedly execute the given function in the mentioned delay and only halts when cancelled. The <strong>clearInterval(id)</strong> function instructs the timer to stop.</p>
+<p>Timers are operated within a single thread, and thus events might queue up, waiting to be executed.</p>
+<p><strong>14. Which symbol is used for comments in Javascript?</strong></p>
+<p>// for Single line comments and</p>
+<p>/*   Multi</p>
+<p>Line</p>
+<p>Comment</p>
+<p>*/</p>
+<p><strong>15. What is the difference between ViewState and SessionState?</strong></p>
+<p>‘ViewState’ is specific to a page in a session.</p>
+<p>‘SessionState’ is specific to user specific data that can be accessed across all pages in the web application.</p>
